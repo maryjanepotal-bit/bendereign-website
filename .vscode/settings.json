@@ -1,0 +1,11 @@
+{
+    "ctk.ruleSet": [],
+    "accessibility.voice.autoSynthesize": "on",
+    "accessibility.voice.ignoreCodeBlocks": true,
+    "accessibility.voice.keywordActivation": "chatInView",
+    "accessibility.voice.speechTimeout": 100,
+    "workbench.editor.alwaysShowEditorActions": true,
+    "liveServer.settings.port": 5501,
+    "editor.foldingMaximumRegions": 100,
+    "accessibility.signalOptions.debouncePositionChanges": false
+}

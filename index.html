@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description"
+        content="Bendereign — a premium Dubai café where coffee, food and lifestyle reign together.">
+    <title>Bendereign | Reign for Eternity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="theme-light">
+    <div class="progress" id="progress"></div>
+    <header class="site-header" id="navbar">
+        <!-- Tagalog comment: Nasa kaliwa ang logo; ilipat ang margin-right:auto sa kanan kung gusto itong bumalik sa right tab. -->
+        <a class="brand" href="#home" aria-label="Bendereign Home">
+            <img src="assets/bendereign-logo.png" class="brand-logo" alt="Bendereign">
+            <span class="brand-name">Bendereign</span>
+        </a>
+        <nav class="desktop-nav">
+            <a href="#about">About us</a>
+            <a href="#minds">The minds</a>
+            <a href="#menu">Our menu</a>
+            <a href="#kitchen">Our kitchen</a>
+            <a href="#moments">Gallery</a>
+            <a href="#visit-us">Visit us</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#about"><i class="fas fa-book-open" aria-hidden="true"></i><span>About us</span></a>
+        <a href="#minds"><i class="fas fa-users" aria-hidden="true"></i><span>The minds</span></a>
+        <a href="#menu"><i class="fas fa-utensils" aria-hidden="true"></i><span>Our menu</span></a>
+        <a href="#kitchen"><i class="fas fa-mug-hot" aria-hidden="true"></i><span>Our kitchen</span></a>
+        <a href="#moments"><i class="fas fa-images" aria-hidden="true"></i><span>Gallery</span></a>
+        <a href="#visit-us"><i class="fas fa-location-dot" aria-hidden="true"></i><span>Visit us</span></a>
+    </nav>
+
+    <button class="menu-rail-toggle" id="sidebarToggle" type="button" aria-expanded="false" aria-controls="menuRail"
+        aria-label="Open menu utilities">&gt;|</button>
+    <aside class="menu-rail" id="menuRail" aria-label="Menu utilities">
+        <nav class="menu-rail-nav">
+            <a href="#home" aria-label="Home"><i class="fas fa-house"></i><span>Home</span></a>
+            <a href="#favorites" data-action="favorites" aria-label="Favorites"><i
+                    class="fas fa-heart"></i><span>Favorites</span></a>
+            <a href="#feedback" data-action="feedback" aria-label="Feedback"><i
+                    class="fas fa-comment"></i><span>Feedback</span></a>
+            <a href="#reignClub" data-action="reignClub" aria-label="Loyalty"><i
+                    class="fas fa-crown"></i><span>Loyalty</span></a>
+            <a href="https://www.google.com/search?q=Bendereign+Dubai+reviews" target="_blank" rel="noreferrer"
+                data-action="googleReview" aria-label="Google Review"><i class="fas fa-star"></i><span>Review</span></a>
+            <a href="#privacy" data-action="privacy" aria-label="Privacy Policy"><i
+                    class="fas fa-shield-halved"></i><span>Privacy Policy</span></a>
+        </nav>
+    </aside>
+
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="right-drawer" id="rightDrawer" aria-hidden="true">
+        <button class="drawer-close" id="drawerClose" type="button" aria-label="Close navigation">
+            <svg class="drawer-close-ring" viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <svg class="drawer-close-x" viewBox="0 0 24 24" aria-hidden="true">
+                <line class="drawer-close-line line-one" x1="5" y1="5" x2="19" y2="19"></line>
+                <line class="drawer-close-line line-two" x1="19" y1="5" x2="5" y2="19"></line>
+            </svg>
+        </button>
+        <!-- Developer comment: Adjust vertical/horizontal centering and divider line width inside the right drawer here -->
+        <div class="drawer-inner">
+            <img class="drawer-logo" src="assets/drawer-logo.png" alt="Bendereign">
+            <p class="drawer-kicker">The Bendereign realm</p>
+            <div class="drawer-divider" aria-hidden="true"></div>
+            <!-- Developer comment: Apply exclusive gold color token for logo and social icons inside this right drawer only -->
+            <div class="drawer-socials">
+                <a href="https://www.linkedin.com/company/bendereign/" target="_blank" rel="noreferrer"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/bendereign/" target="_blank" rel="noreferrer"
+                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@bendereign" target="_blank" rel="noreferrer" aria-label="TikTok"><i
+                        class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/p/Bendereign-61552033150007/" target="_blank" rel="noreferrer"
+                    aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <!-- Developer comment: Configure smooth gold circle hover animation for drawer social icons here -->
+        </div>
+    </aside>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <video class="hero-video" autoplay muted loop playsinline poster="assets/page-02.jpg">
+                <source src="assets/bendereign-hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-shade"></div>
+            <div class="hero-content reveal">
+                <p class="eyebrow light">Born in Dubai</p>
+                <h1>Reign for<br><em>eternity.</em></h1>
+                <p class="hero-copy">Premium coffee, handcrafted food and a lifestyle experience designed to be
+                    remembered.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#menu">Discover the menu</a>
+                    <a class="text-link" href="#about">Our story ↘</a>
+                </div>
+            </div>
+            <div class="hero-note">
+                Dubai · UAE
+                <span></span>
+                Coffee · Food · Culture
+            </div>
+        </section>
+
+        <!-- STORY SECTION -->
+        <section class="story section" id="about">
+            <div class="story-grid">
+                <div class="story-copy reveal">
+                    <div class="section-heading">
+                        <p class="eyebrow">The Bendereign Story</p>
+                        <h2>More than coffee.<br><em> A world of its own.</em></h2>
+                    </div>
+                    <p class="lead">Bendereign brings together premium ingredients, distinctive design and genuine
+                        hospitality in one modern café experience.</p>
+
+                    <p>Every detail—from the first pour to the final presentation—is created with<br>intention.
+                        The result is a brand that feels elevated without losing its warmth.</p>
+
+                    <div class="counter-grid">
+                        <div>
+                            <strong class="counter" data-target="100">0</strong>
+                            <span>% quality focus</span>
+                        </div>
+                        <div>
+                            <strong>∞</strong>
+                            <span>Passion for craft</span>
+                        </div>
+                        <div>
+                            <strong>DXB</strong>
+                            <span>Born in Dubai</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-image reveal">
+                    <img src="assets/page-04.jpg" alt="Bendereign café interior">
+                </div>
+            </div>
+        </section>
+
+        <!-- LEADERSHIP SECTION -->
+        <section class="leadership section dark-section" id="minds">
+            <!-- Tagalog comment: Dito i-aadjust o tatanggalin ang anumang purple/unwanted background sa likod ng mga photo ng slideshow -->
+            <!-- Developer comment: Remove or adjust unwanted background tints behind slideshow photos here -->
+            <!-- Tagalog comment: Dito makikita ang instructions kung paano maglagay ng solid background sa buong slideshow sa hinaharap -->
+            <!--
+            <div class="slideshow-background-guide">
+                <p>Optional future guide: add a solid background color to the full slideshow container here if a client requests it.</p>
+            </div>
+            -->
+            <div class="leadership-intro reveal">
+                <div>
+                    <p class="eyebrow light">People Behind the Story</p>
+                    <h2>The people shaping<br><em>the realm.</em></h2>
+                </div>
+                <p>Three disciplines—commercial vision, product craft and brand direction—working as one Bendereign
+                    identity.</p>
+            </div>
+            <!-- Developer comment: Standardize dimensions, aspect ratios, and border-radius for slideshow containers here -->
+            <div class="leadership-editorial">
+                <article class="leader-row reveal">
+                    <div class="leader-photo">
+                        <img src="assets/page-09.jpg" alt="Vaman Alawadhi"><span>01</span>
+                    </div>
+                    <div class="leader-copy">
+                        <p class="leader-role">The Reignmaker</p>
+                        <h3>Vaman Alawadhi</h3>
+                        <p>Business leader and investor bringing market-development, management and financial experience
+                            to Bendereign’s expansion. Vaman Alawadhi, son of Mr. Vimal Alawadhi — the Managing Director
+                            of Best Agrolife Limited, a public listed company in India with a valuation of approximately
+                            $160 million — has been immersed in the business world from an early age.</p>
+                        <p>Early exposure to the business world has cultivated his leadership qualities and honed his
+                            management techniques. He has also contributed to the company’s brand market development on
+                            a field level, playing a pivotal role in elevating Best Agrolife Limited to its current
+                            esteemed position in the market.</p>
+                        <p>Over the past two years, he has actively engaged in the stock market, achieving annual
+                            returns ranging between 12% to 14%. This experience has not only enhanced his investment
+                            acumen but also demonstrated his capacity to manage and thrive in high-risk financial
+                            environments.</p>
+                        <p>Moreover, Vaman has taken up keen interest and developed a portfolio in real estate
+                            investments, expanding his portfolio and market experience to more fields.</p>
+                        <small>Vision · Investment · Expansion</small>
+                    </div>
+                </article>
+                <article class="leader-row reverse reveal">
+                    <div class="leader-photo">
+                        <img src="assets/page-10.jpg" alt="Charlie Gou"><span>02</span>
+                    </div>
+                    <div class="leader-copy">
+                        <p class="leader-role">Culinary and product expert</p>
+                        <h3>Charlie Gou</h3>
+                        <p>With over 20 years of experience, Charlie is a master in bread, pastry, chocolate, and
+                            dessert creation. He brings deep expertise in flavor, form, and formula design, along with a
+                            strong background in coffee, light food, and brand planning.</p>
+                        <p>Beyond the kitchen, he has successfully built and operated multiple internet-famous brands,
+                            leading both product development and team building from the ground up.</p>
+                        <p>His experience listed in the profile includes technical consultancy roles beginning in 2004,
+                            publication of Big Players in Baking Marketing in 2009, and the founding/co-founding of
+                            multiple food, café, bakery and tea brands between 2010 and 2019.</p>
+                        <small>Product · Culinary · Quality</small>
+                    </div>
+                </article>
+                <article class="leader-row reveal">
+                    <div class="leader-photo">
+                        <img src="assets/page-11.jpg" alt="Hawk"><span>03</span>
+                    </div>
+                    <div class="leader-copy">
+                        <p class="leader-role">Brand consultant</p>
+                        <h3>Hawk</h3>
+                        <p>With a decade of experience in commercial design, our brand consultant brings a visionary
+                            approach to building new consumer brands. His creative leadership and deep understanding of
+                            brand aesthetics have shaped multiple internet-famous concepts, making him an invaluable
+                            part of Bendereign’s unique identity.</p>
+                        <p>His credentials listed in the profile include:</p>
+                        <p>• Founder of Su New Designs</p>
+                        <p>• Named “Top 10 Creative Designers in China”</p>
+                        <p>• Honored as a 4040 Outstanding Designer — Nanjing</p>
+                        <p>• Co-founder of Nishio Matcha</p>
+                        <p>• Over 10 years of experience in commercial design consulting</p>
+                        <p>• Expert in creating and scaling internet-renowned consumer brands</p>
+                        <small>Brand · Design · Experience</small>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section class="menu-section section" id="menu">
+            <!-- Developer comment: Menu hero section and alignment controls -->
+            <!-- Tagalog comment: Dito i-aadjust ang horizontal alignment ng eyebrow at header para tumapat sa "ALL" -->
+            <div class="menu-intro reveal">
+                <div class="menu-heading-block">
+                    <div class="menu-eyebrow-wrap">
+                        <p class="eyebrow">ORDER BENDEREIGN</p>
+                    </div>
+                    <h2>Choose your<br><em>current mood.</em></h2>
+                </div>
+                <p>Start with a collection. Open it to see the individual products, description and price. Order through
+                    Keeta or noon Food.</p>
+            </div>
+            <!-- Tagalog comment: Dito i-aadjust ang espasyo o gap sa pagitan ng current mode section at ng mga produkto -->
+            <!-- Developer comment: Adjust vertical gap and padding between the current mood section and product filters here -->
+            <div class="menu-controls">
+                <div class="menu-toolbar" id="menuFilters"></div>
+                <label class="menu-search-wrap" aria-label="Search menu">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input class="menu-search" id="menuSearch" type="search" placeholder="Search menu...">
+                </label>
+                <!-- Tagalog comment: Dito i-aadjust ang view toggle buttons at tooltips -->
+                <!-- Developer comment: Adjust view toggle buttons, states, and tooltips here -->
+                <div class="menu-view-switcher" role="group" aria-label="Menu view">
+                    <button id="menuViewToggle" class="view-toggle active" type="button"
+                        aria-label="Toggle grid/list/column view" aria-pressed="true" title="View Grid"
+                        data-view="grid">▦</button>
+                </div>
+            </div>
+            <!-- Tagalog comment: Dito i-aadjust ang margin at lapad ng product grid at placeholders -->
+            <!-- Developer comment: Adjust product grid margins, container width, and card placeholders here -->
+            <!-- Tagalog comment: Dito i-aadjust ang font size ng mga category names -->
+            <!-- Developer comment: Adjust font size and typography scale for category filter names here -->
+            <div id="menuBreadcrumb" class="menu-breadcrumb" hidden>
+                <span id="currentCollection"></span>
+            </div>
+            <div class="menu-grid" id="menuGrid"></div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="experience section" id="kitchen">
+            <!-- Tagalog comment: Dito i-aadjust at hiwalay ang code ng eyebrow para hindi sumama kapag ginalaw ang header -->
+            <!-- Developer comment: Isolate and adjust the eyebrow wrapper structure here -->
+            <div class="experience-copy reveal">
+                <div class="experience-eyebrow-wrap">
+                    <p class="eyebrow light">INSIDE BENDEREIGN</p>
+                </div>
+                <h2>A space with<br><em>its own energy.</em></h2>
+                <p>Warm service, thoughtful details, and a space with its own energy.</p>
+                <div class="experience-count">
+                    <span id="experienceNumber">01</span> / 05
+                </div>
+            </div>
+            <!-- Tagalog comment: Dito i-aadjust ang lapad at vertical size ng image mula sa right side nang hindi ginalaw ang left margin -->
+            <!-- Developer comment: Adjust image vertical aspect ratio and clip dimensions from the right side here -->
+            <div class="experience-carousel reveal">
+                <img id="experienceImage" src="assets/exp-01.jpg" alt="Bendereign interior">
+                <div class="carousel-controls">
+                    <button id="expPrev">←</button>
+                    <button id="expNext">→</button>
+                </div>
+            </div>
+            <!-- Tagalog comment: Dito makikita ang instructions kung paano i-on o maglagay ng footer sakaling hingin ng client sa hinaharap -->
+            <!-- Developer comment: Optional footer guide template for client configurations -->
+            <!--
+            <footer class="optional-client-footer">
+                <p>Optional footer for future client configuration.</p>
+            </footer>
+            -->
+        </section>
+
+        <!-- MOMENTS SECTION -->
+        <section class="moments section" id="moments">
+            <div class="moments-heading reveal">
+                <div class="moments-heading-copy">
+                    <p class="eyebrow">Bendereign Moments</p>
+                    <h2>Life, served<br><em>beautifully.</em></h2>
+                </div>
+                <p class="moments-intro">A glimpse into the spaces, people and details that make every Bendereign visit
+                    memorable.</p>
+            </div>
+            <div class="moments-window">
+                <div class="moments-track" id="momentsTrack"></div>
+            </div>
+        </section>
+
+        <!-- REIGN CLUB SECTION -->
+        <section class="reign-club section" id="reignClub">
+            <div class="reign-club-copy reveal">
+                <p class="eyebrow light">The Reign Club</p>
+                <h2>Stay in the<br><em>realm.</em></h2>
+                <p>Join Bendereign for new menu drops, special offers and future rewards.</p>
+            </div>
+            <form class="reign-signup reveal" id="reignSignup">
+                <input type="text" id="reignName" placeholder="Your name" required>
+                <input type="email" id="reignEmail" placeholder="Email address" required>
+                <input type="tel" id="reignPhone" placeholder="Mobile number">
+                <button class="button button-light" type="submit">Join The Reign</button>
+                <small>Be first to hear about new menu releases, offers and future Bendereign rewards.</small>
+            </form>
+        </section>
+
+        <!-- VISIT US / RESERVATIONS SECTION -->
+        <section class="contact visit-us" id="visit-us">
+            <div class="visit-hero" aria-hidden="true"></div>
+
+            <div class="visit-sheet">
+                <div class="visit-sheet-inner">
+                    <header class="visit-sheet-heading">
+                        <h2>VISIT US</h2>
+                        <p>EXPERIENCE &amp; RESERVATIONS</p>
+                    </header>
+
+                    <div class="visit-grid">
+                        <div class="visit-details reveal">
+                            <p class="eyebrow">BENDEREIGN DUBAI</p>
+                            <h3>Come for the coffee.<br><em>Stay for the moment.</em></h3>
+                            <p class="visit-intro">A considered space for coffee, food and good company.</p>
+
+                            <div class="contact-icons">
+                                <a href="https://maps.google.com/?q=Triple+777+Center+Unit+G-14+Ground+Floor+Al+Wasl+Road+Jumeirah+3+Dubai"
+                                    target="_blank" rel="noreferrer">
+                                    <b aria-hidden="true"><i class="fas fa-map-marker-alt"></i></b>
+                                    <span>Triple 777 Center, Unit G-14<br>Ground Floor, Al Wasl Road, Jumeirah 3,
+                                        Dubai</span>
+                                </a>
+                                <a href="mailto:social@bendereign.com">
+                                    <b aria-hidden="true"><i class="fas fa-envelope"></i></b>
+                                    <span>social@bendereign.com</span>
+                                </a>
+                                <a href="https://wa.me/97145724171" target="_blank" rel="noreferrer">
+                                    <b aria-hidden="true"><i class="fas fa-phone"></i></b>
+                                    <span>+971 4 572 4171</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <form class="enquiry visit-form reveal" id="contactForm">
+                            <p class="eyebrow">RESERVE A TABLE</p>
+                            <h3>Make it<br><em>memorable.</em></h3>
+                            <label>Name *<input required name="name" autocomplete="name"
+                                    placeholder="Your name"></label>
+                            <label>Email *<input required type="email" name="email" autocomplete="email"
+                                    placeholder="you@example.com"></label>
+                            <label>Subject<input name="subject" placeholder="How can we help?"></label>
+                            <label>Message<textarea required name="message"
+                                    placeholder="Tell us a little more"></textarea></label>
+                            <button class="button button-light" type="submit">Send <span>↗</span></button>
+                        </form>
+                    </div>
+
+                    <div class="visit-map reveal">
+                        <iframe title="Bendereign location map"
+                            src="https://www.google.com/maps?q=Triple+777+Center+Unit+G-14+Ground+Floor+Al+Wasl+Road+Jumeirah+3+Dubai&output=embed"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER 
+     Tagalog comment: Shared footer ito para sa MINDS at MENU; dito i-aadjust ang laman at social links. 
+    <footer class="site-footer">
+         Developer comment: Adjust footer height reduction and bottom flex anchoring mechanics here 
+        <nav>
+            <a class="footer-brand" href="#home" aria-label="Bendereign Home">
+                <img src="assets/bendereign-logo.png" class="footer-logo" alt="Bendereign">
+                <p>Bendereign</p>
+            </a>
+        </nav>
+         Developer comment: Adjust default white icon states, logo object-fit, and gold circle hover effects here 
+        <div class="social-icons" aria-label="Social media">
+            <a href="https://www.linkedin.com/company/bendereign/" target="_blank" rel="noreferrer"
+                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/bendereign/" target="_blank" rel="noreferrer" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@bendereign" target="_blank" rel="noreferrer" aria-label="TikTok"><i
+                    class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/p/Bendereign-61552033150007/" target="_blank" rel="noreferrer"
+                aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <small>© <span id="year"></span> Bendereign™ · Reign for Eternity</small>
+    </footer> -->
+
+    <div class="floating-actions-container">
+        <button id="realmToggle" class="realm-float" type="button" aria-label="Open Bendereign Realm drawer">
+            <i class="fas fa-crown" aria-hidden="true"></i>
+        </button>
+        <a class="whatsapp-float ring-button" href="https://wa.me/97145724171" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+            <svg class="back-to-top-ring" viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span class="back-to-top-arrow" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- DELIVERY MODAL -->
+    <div class="overlay" id="deliveryOverlay"></div>
+    <section class="delivery-modal" id="deliveryModal" aria-hidden="true">
+        <button id="closeDelivery" class="close">×</button>
+        <p class="eyebrow">Delivery partners</p>
+        <h2>Order Bendereign</h2>
+        <p>Choose your preferred delivery platform. Payment, address and tracking continue securely there.</p>
+        <div class="delivery-options">
+            <a href="https://apps.apple.com/ae/app/keeta-food-delivery/id1662451643" target="_blank">
+                <small>Order with</small>
+                <strong>Keeta</strong>
+                <b>↗</b>
+            </a>
+            <a href="https://food.noon.com/restaurant/bendereign-dubai/" target="_blank">
+                <small>Order with</small>
+                <strong>noon Food</strong>
+                <b>↗</b>
+            </a>
+        </div>
+    </section>
+
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookieBanner">
+        <p>We use cookies to remember your preferences and improve your Bendereign experience.</p>
+        <div>
+            <button id="necessaryCookies">Necessary only</button>
+            <button id="acceptCookies">Accept</button>
+        </div>
+    </div>
+
+    <aside class="favorites-panel" id="favoritesPanel" aria-hidden="true" aria-labelledby="favoritesTitle">
+        <button class="panel-close" type="button" data-close-panel aria-label="Close favorites">×</button>
+        <p class="eyebrow">Your saved menu</p>
+        <h2 id="favoritesTitle">My Favorites</h2>
+        <div id="favoritesContent"></div>
+    </aside>
+
+    <div class="privacy-overlay" id="privacyOverlay" aria-hidden="true">
+        <section class="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+            <button class="panel-close" type="button" data-close-panel aria-label="Close privacy policy">×</button>
+            <p class="eyebrow">Bendereign policy</p>
+            <h2 id="privacyTitle">Privacy Policy</h2>
+            <p>We collect only the information needed to manage reservations, respond to enquiries and support loyalty
+                accounts. Your name, contact details and preferences are handled securely and are not sold.</p>
+            <p>Cookie technologies help us remember preferences and understand site usage. You can disable non-essential
+                cookies in your browser at any time.</p>
+            <p>Requests about access, correction or deletion of your information can be sent to
+                <a href="mailto:social@bendereign.com">social@bendereign.com</a>. We follow applicable UAE data
+                protection and hospitality requirements.
+            </p>
+        </section>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
