@@ -17,14 +17,13 @@
 </head>
 
 <body class="theme-light">
-    <div class="progress" id="progress"></div>
     <header class="site-header" id="navbar">
         <a class="brand" href="#home" aria-label="Bendereign Home">
             <img src="assets/bendereign-logo.png" class="brand-logo" alt="Bendereign">
             <span class="brand-name">Bendereign</span>
         </a>
         <nav class="desktop-nav">
-            <a href="#about">About us</a>
+            <a href="#about" class="active-nav">About us</a>
             <a href="#minds">The minds</a>
             <a href="#menu">Our menu</a>
             <a href="#kitchen">Our kitchen</a>
@@ -46,35 +45,11 @@
         <a href="#moments"><i class="fas fa-images" aria-hidden="true"></i><span>Gallery</span></a>
         <a href="#visit-us"><i class="fas fa-location-dot" aria-hidden="true"></i><span>Visit us</span></a>
     </nav>
-    <!-- MENU RAIL 
-    <button class="menu-rail-toggle" id="sidebarToggle" type="button" aria-expanded="false" aria-controls="menuRail"
-        aria-label="Open menu utilities">&gt;|</button>
-    <aside class="menu-rail" id="menuRail" aria-label="Menu utilities">
-        <nav class="menu-rail-nav">
-            <a href="#home" aria-label="Home"><i class="fas fa-house"></i><span>Home</span></a>
-            <a href="#favorites" data-action="favorites" aria-label="Favorites"><i
-                    class="fas fa-heart"></i><span>Favorites</span></a>
-            <a href="#feedback" data-action="feedback" aria-label="Feedback"><i
-                    class="fas fa-comment"></i><span>Feedback</span></a>
-            <a href="#reignClub" data-action="reignClub" aria-label="Loyalty"><i
-                    class="fas fa-crown"></i><span>Loyalty</span></a>
-            <a href="https://www.google.com/search?q=Bendereign+Dubai+reviews" target="_blank" rel="noreferrer"
-                data-action="googleReview" aria-label="Google Review"><i class="fas fa-star"></i><span>Review</span></a>
-            <a href="#privacy" data-action="privacy" aria-label="Privacy Policy"><i
-                    class="fas fa-shield-halved"></i><span>Privacy Policy</span></a>
-        </nav>
-    </aside> -->
 
     <div class="drawer-backdrop" id="drawerBackdrop"></div>
     <aside class="right-drawer" id="rightDrawer" aria-hidden="true">
         <button class="drawer-close" id="drawerClose" type="button" aria-label="Close navigation">
-            <svg class="drawer-close-ring" viewBox="0 0 48 48" aria-hidden="true">
-                <circle cx="24" cy="24" r="20"></circle>
-            </svg>
-            <svg class="drawer-close-x" viewBox="0 0 24 24" aria-hidden="true">
-                <line class="drawer-close-line line-one" x1="5" y1="5" x2="19" y2="19"></line>
-                <line class="drawer-close-line line-two" x1="19" y1="5" x2="5" y2="19"></line>
-            </svg>
+            <i class="fas fa-times" aria-hidden="true"></i>
         </button>
         <div class="drawer-inner">
             <img class="drawer-logo" src="assets/drawer-logo.png" alt="Bendereign">
@@ -95,7 +70,7 @@
 
     <main>
         <!-- HERO SECTION -->
-        <section class="hero" id="home">
+        <section class="hero active-section" id="home">
             <video class="hero-video" autoplay muted loop playsinline poster="assets/page-02.jpg">
                 <source src="assets/bendereign-hero.mp4" type="video/mp4">
             </video>
@@ -131,7 +106,7 @@
                         is a brand that feels elevated without losing its warmth.</p>
                     <div class="counter-grid">
                         <div>
-                            <strong class="counter" data-target="100">0</strong>
+                            <strong class="counter" data-target="100">100</strong>
                             <span>% quality focus</span>
                         </div>
                         <div>
@@ -170,18 +145,7 @@
                         <h3>Vaman Alawadhi</h3>
                         <p>Business leader and investor bringing market-development, management and financial experience
                             to Bendereign’s expansion. Vaman Alawadhi, son of Mr. Vimal Alawadhi — the Managing Director
-                            of Best Agrolife Limited, a public listed company in India with a valuation of approximately
-                            $160 million — has been immersed in the business world from an early age.</p>
-                        <p>Early exposure to the business world has cultivated his leadership qualities and honed his
-                            management techniques. He has also contributed to the company’s brand market development on
-                            a field level, playing a pivotal role in elevating Best Agrolife Limited to its current
-                            esteemed position in the market.</p>
-                        <p>Over the past two years, he has actively engaged in the stock market, achieving annual
-                            returns ranging between 12% to 14%. This experience has not only enhanced his investment
-                            acumen but also demonstrated his capacity to manage and thrive in high-risk financial
-                            environments.</p>
-                        <p>Moreover, Vaman has taken up keen interest and developed a portfolio in real estate
-                            investments, expanding his portfolio and market experience to more fields.</p>
+                            of Best Agrolife Limited — has been immersed in business from an early age.</p>
                         <small>Vision · Investment · Expansion</small>
                     </div>
                 </article>
@@ -193,13 +157,7 @@
                         <p class="leader-role">Culinary and product expert</p>
                         <h3>Charlie Gou</h3>
                         <p>With over 20 years of experience, Charlie is a master in bread, pastry, chocolate, and
-                            dessert creation. He brings deep expertise in flavor, form, and formula design, along with a
-                            strong background in coffee, light food, and brand planning.</p>
-                        <p>Beyond the kitchen, he has successfully built and operated multiple internet-famous brands,
-                            leading both product development and team building from the ground up.</p>
-                        <p>His experience listed in the profile includes technical consultancy roles beginning in 2004,
-                            publication of Big Players in Baking Marketing in 2009, and the founding/co-founding of
-                            multiple food, café, bakery and tea brands between 2010 and 2019.</p>
+                            dessert creation, bringing deep expertise in flavor, form, and formula design.</p>
                         <small>Product · Culinary · Quality</small>
                     </div>
                 </article>
@@ -211,16 +169,7 @@
                         <p class="leader-role">Brand consultant</p>
                         <h3>Hawk</h3>
                         <p>With a decade of experience in commercial design, our brand consultant brings a visionary
-                            approach to building new consumer brands. His creative leadership and deep understanding of
-                            brand aesthetics have shaped multiple internet-famous concepts, making him an invaluable
-                            part of Bendereign’s unique identity.</p>
-                        <p>His credentials listed in the profile include:</p>
-                        <p>• Founder of Su New Designs</p>
-                        <p>• Named “Top 10 Creative Designers in China”</p>
-                        <p>• Honored as a 4040 Outstanding Designer — Nanjing</p>
-                        <p>• Co-founder of Nishio Matcha</p>
-                        <p>• Over 10 years of experience in commercial design consulting</p>
-                        <p>• Expert in creating and scaling internet-renowned consumer brands</p>
+                            approach to building new consumer brands and shaping unique identities.</p>
                         <small>Brand · Design · Experience</small>
                     </div>
                 </article>
@@ -236,7 +185,7 @@
                     </div>
                     <h2>Choose your<br><em>current mood.</em></h2>
                 </div>
-                <p>Start with a collection. Open it to see the individual products, description and price. Order through
+                <p>Start with a collection. Open it to see individual products, descriptions, and prices. Order through
                     Keeta or noon Food.</p>
             </div>
             <div class="menu-controls">
@@ -246,8 +195,7 @@
                     <input class="menu-search" id="menuSearch" type="search" placeholder="Search menu...">
                 </label>
                 <div class="menu-view-switcher" role="group" aria-label="Menu view">
-                    <button id="menuViewToggle" class="view-toggle active" type="button"
-                        aria-label="Toggle grid/list/column view" aria-pressed="true" title="View Grid"
+                    <button id="menuViewToggle" class="view-toggle" type="button" title="View Grid"
                         data-view="grid">▦</button>
                 </div>
             </div>
@@ -264,7 +212,7 @@
                     <p class="eyebrow light">INSIDE BENDEREIGN</p>
                 </div>
                 <h2>A space with<br><em>its own energy.</em></h2>
-                <p>Warm service, thoughtful details, and a space with its own energy.</p>
+                <p>Warm service, thoughtful details, and a space with distinct character.</p>
                 <div class="experience-count">
                     <span id="experienceNumber">01</span> / 05
                 </div>
@@ -285,8 +233,8 @@
                     <p class="eyebrow">Bendereign Moments</p>
                     <h2>Life, served<br><em>beautifully.</em></h2>
                 </div>
-                <p class="moments-intro">A glimpse into the spaces, people and details that make every Bendereign visit
-                    memorable.</p>
+                <p class="moments-intro">A glimpse into the spaces, people and details that make every visit memorable.
+                </p>
             </div>
             <div class="moments-window">
                 <div class="moments-track" id="momentsTrack"></div>
@@ -305,13 +253,12 @@
                 <input type="email" id="reignEmail" placeholder="Email address" required>
                 <input type="tel" id="reignPhone" placeholder="Mobile number">
                 <button class="button button-light" type="submit">Join The Reign</button>
-                <small>Be first to hear about new menu releases, offers and future Bendereign rewards.</small>
+                <small>Be first to hear about new menu releases, offers and future rewards.</small>
             </form>
         </section>
 
         <!-- VISIT US / RESERVATIONS SECTION -->
-        <section class="contact visit-us" id="visit-us">
-            <div class="visit-hero" aria-hidden="true"></div>
+        <section class="contact visit-us section" id="visit-us">
             <div class="visit-sheet">
                 <div class="visit-sheet-inner">
                     <header class="visit-sheet-heading">
@@ -384,7 +331,7 @@
         <button id="closeDelivery" class="close">×</button>
         <p class="eyebrow">Delivery partners</p>
         <h2>Order Bendereign</h2>
-        <p>Choose your preferred delivery platform. Payment, address and tracking continue securely there.</p>
+        <p>Choose your preferred delivery platform.</p>
         <div class="delivery-options">
             <a href="https://apps.apple.com/ae/app/keeta-food-delivery/id1662451643" target="_blank">
                 <small>Order with</small>
@@ -398,37 +345,6 @@
             </a>
         </div>
     </section>
-
-    <!-- COOKIE BANNER 
-    <div class="cookie-banner" id="cookieBanner">
-        <p>We use cookies to remember your preferences and improve your Bendereign experience.</p>
-        <div>
-            <button id="necessaryCookies">Necessary only</button>
-            <button id="acceptCookies">Accept</button>
-        </div>
-    </div>
-
-    <aside class="favorites-panel" id="favoritesPanel" aria-hidden="true" aria-labelledby="favoritesTitle">
-        <button class="panel-close" type="button" data-close-panel aria-label="Close favorites">×</button>
-        <p class="eyebrow">Your saved menu</p>
-        <h2 id="favoritesTitle">My Favorites</h2>
-        <div id="favoritesContent"></div>
-    </aside>
-
-    <div class="privacy-overlay" id="privacyOverlay" aria-hidden="true">
-        <section class="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
-            <button class="panel-close" type="button" data-close-panel aria-label="Close privacy policy">×</button>
-            <p class="eyebrow">Bendereign policy</p>
-            <h2 id="privacyTitle">Privacy Policy</h2>
-            <p>We collect only the information needed to manage reservations, respond to enquiries and support loyalty
-                accounts. Your name, contact details and preferences are handled securely and are not sold.</p>
-            <p>Cookie technologies help us remember preferences and understand site usage. You can disable non-essential
-                cookies in your browser at any time.</p>
-            <p>Requests about access, correction or deletion of your information can be sent to <a
-                    href="mailto:social@bendereign.com">social@bendereign.com</a>. We follow applicable UAE data
-                protection and hospitality requirements.</p>
-        </section>
-    </div>-->
 
     <script src="app.js" defer></script>
 </body>
