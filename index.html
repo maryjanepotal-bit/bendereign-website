@@ -19,7 +19,6 @@
 <body class="theme-light">
     <div class="progress" id="progress"></div>
     <header class="site-header" id="navbar">
-        <!-- Tagalog comment: Nasa kaliwa ang logo; ilipat ang margin-right:auto sa kanan kung gusto itong bumalik sa right tab. -->
         <a class="brand" href="#home" aria-label="Bendereign Home">
             <img src="assets/bendereign-logo.png" class="brand-logo" alt="Bendereign">
             <span class="brand-name">Bendereign</span>
@@ -47,7 +46,7 @@
         <a href="#moments"><i class="fas fa-images" aria-hidden="true"></i><span>Gallery</span></a>
         <a href="#visit-us"><i class="fas fa-location-dot" aria-hidden="true"></i><span>Visit us</span></a>
     </nav>
-
+    <!-- MENU RAIL 
     <button class="menu-rail-toggle" id="sidebarToggle" type="button" aria-expanded="false" aria-controls="menuRail"
         aria-label="Open menu utilities">&gt;|</button>
     <aside class="menu-rail" id="menuRail" aria-label="Menu utilities">
@@ -64,7 +63,7 @@
             <a href="#privacy" data-action="privacy" aria-label="Privacy Policy"><i
                     class="fas fa-shield-halved"></i><span>Privacy Policy</span></a>
         </nav>
-    </aside>
+    </aside> -->
 
     <div class="drawer-backdrop" id="drawerBackdrop"></div>
     <aside class="right-drawer" id="rightDrawer" aria-hidden="true">
@@ -77,12 +76,10 @@
                 <line class="drawer-close-line line-two" x1="19" y1="5" x2="5" y2="19"></line>
             </svg>
         </button>
-        <!-- Developer comment: Adjust vertical/horizontal centering and divider line width inside the right drawer here -->
         <div class="drawer-inner">
             <img class="drawer-logo" src="assets/drawer-logo.png" alt="Bendereign">
             <p class="drawer-kicker">The Bendereign realm</p>
             <div class="drawer-divider" aria-hidden="true"></div>
-            <!-- Developer comment: Apply exclusive gold color token for logo and social icons inside this right drawer only -->
             <div class="drawer-socials">
                 <a href="https://www.linkedin.com/company/bendereign/" target="_blank" rel="noreferrer"
                     aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -93,7 +90,6 @@
                 <a href="https://www.facebook.com/p/Bendereign-61552033150007/" target="_blank" rel="noreferrer"
                     aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             </div>
-            <!-- Developer comment: Configure smooth gold circle hover animation for drawer social icons here -->
         </div>
     </aside>
 
@@ -131,10 +127,8 @@
                     </div>
                     <p class="lead">Bendereign brings together premium ingredients, distinctive design and genuine
                         hospitality in one modern café experience.</p>
-
-                    <p>Every detail—from the first pour to the final presentation—is created with<br>intention.
-                        The result is a brand that feels elevated without losing its warmth.</p>
-
+                    <p>Every detail—from the first pour to the final presentation—is created with intention. The result
+                        is a brand that feels elevated without losing its warmth.</p>
                     <div class="counter-grid">
                         <div>
                             <strong class="counter" data-target="100">0</strong>
@@ -158,14 +152,6 @@
 
         <!-- LEADERSHIP SECTION -->
         <section class="leadership section dark-section" id="minds">
-            <!-- Tagalog comment: Dito i-aadjust o tatanggalin ang anumang purple/unwanted background sa likod ng mga photo ng slideshow -->
-            <!-- Developer comment: Remove or adjust unwanted background tints behind slideshow photos here -->
-            <!-- Tagalog comment: Dito makikita ang instructions kung paano maglagay ng solid background sa buong slideshow sa hinaharap -->
-            <!--
-            <div class="slideshow-background-guide">
-                <p>Optional future guide: add a solid background color to the full slideshow container here if a client requests it.</p>
-            </div>
-            -->
             <div class="leadership-intro reveal">
                 <div>
                     <p class="eyebrow light">People Behind the Story</p>
@@ -174,7 +160,6 @@
                 <p>Three disciplines—commercial vision, product craft and brand direction—working as one Bendereign
                     identity.</p>
             </div>
-            <!-- Developer comment: Standardize dimensions, aspect ratios, and border-radius for slideshow containers here -->
             <div class="leadership-editorial">
                 <article class="leader-row reveal">
                     <div class="leader-photo">
@@ -244,8 +229,6 @@
 
         <!-- MENU SECTION -->
         <section class="menu-section section" id="menu">
-            <!-- Developer comment: Menu hero section and alignment controls -->
-            <!-- Tagalog comment: Dito i-aadjust ang horizontal alignment ng eyebrow at header para tumapat sa "ALL" -->
             <div class="menu-intro reveal">
                 <div class="menu-heading-block">
                     <div class="menu-eyebrow-wrap">
@@ -256,26 +239,18 @@
                 <p>Start with a collection. Open it to see the individual products, description and price. Order through
                     Keeta or noon Food.</p>
             </div>
-            <!-- Tagalog comment: Dito i-aadjust ang espasyo o gap sa pagitan ng current mode section at ng mga produkto -->
-            <!-- Developer comment: Adjust vertical gap and padding between the current mood section and product filters here -->
             <div class="menu-controls">
                 <div class="menu-toolbar" id="menuFilters"></div>
                 <label class="menu-search-wrap" aria-label="Search menu">
                     <i class="fas fa-search" aria-hidden="true"></i>
                     <input class="menu-search" id="menuSearch" type="search" placeholder="Search menu...">
                 </label>
-                <!-- Tagalog comment: Dito i-aadjust ang view toggle buttons at tooltips -->
-                <!-- Developer comment: Adjust view toggle buttons, states, and tooltips here -->
                 <div class="menu-view-switcher" role="group" aria-label="Menu view">
                     <button id="menuViewToggle" class="view-toggle active" type="button"
                         aria-label="Toggle grid/list/column view" aria-pressed="true" title="View Grid"
                         data-view="grid">▦</button>
                 </div>
             </div>
-            <!-- Tagalog comment: Dito i-aadjust ang margin at lapad ng product grid at placeholders -->
-            <!-- Developer comment: Adjust product grid margins, container width, and card placeholders here -->
-            <!-- Tagalog comment: Dito i-aadjust ang font size ng mga category names -->
-            <!-- Developer comment: Adjust font size and typography scale for category filter names here -->
             <div id="menuBreadcrumb" class="menu-breadcrumb" hidden>
                 <span id="currentCollection"></span>
             </div>
@@ -284,8 +259,6 @@
 
         <!-- EXPERIENCE SECTION -->
         <section class="experience section" id="kitchen">
-            <!-- Tagalog comment: Dito i-aadjust at hiwalay ang code ng eyebrow para hindi sumama kapag ginalaw ang header -->
-            <!-- Developer comment: Isolate and adjust the eyebrow wrapper structure here -->
             <div class="experience-copy reveal">
                 <div class="experience-eyebrow-wrap">
                     <p class="eyebrow light">INSIDE BENDEREIGN</p>
@@ -296,8 +269,6 @@
                     <span id="experienceNumber">01</span> / 05
                 </div>
             </div>
-            <!-- Tagalog comment: Dito i-aadjust ang lapad at vertical size ng image mula sa right side nang hindi ginalaw ang left margin -->
-            <!-- Developer comment: Adjust image vertical aspect ratio and clip dimensions from the right side here -->
             <div class="experience-carousel reveal">
                 <img id="experienceImage" src="assets/exp-01.jpg" alt="Bendereign interior">
                 <div class="carousel-controls">
@@ -305,13 +276,6 @@
                     <button id="expNext">→</button>
                 </div>
             </div>
-            <!-- Tagalog comment: Dito makikita ang instructions kung paano i-on o maglagay ng footer sakaling hingin ng client sa hinaharap -->
-            <!-- Developer comment: Optional footer guide template for client configurations -->
-            <!--
-            <footer class="optional-client-footer">
-                <p>Optional footer for future client configuration.</p>
-            </footer>
-            -->
         </section>
 
         <!-- MOMENTS SECTION -->
@@ -348,20 +312,17 @@
         <!-- VISIT US / RESERVATIONS SECTION -->
         <section class="contact visit-us" id="visit-us">
             <div class="visit-hero" aria-hidden="true"></div>
-
             <div class="visit-sheet">
                 <div class="visit-sheet-inner">
                     <header class="visit-sheet-heading">
                         <h2>VISIT US</h2>
                         <p>EXPERIENCE &amp; RESERVATIONS</p>
                     </header>
-
                     <div class="visit-grid">
                         <div class="visit-details reveal">
                             <p class="eyebrow">BENDEREIGN DUBAI</p>
                             <h3>Come for the coffee.<br><em>Stay for the moment.</em></h3>
                             <p class="visit-intro">A considered space for coffee, food and good company.</p>
-
                             <div class="contact-icons">
                                 <a href="https://maps.google.com/?q=Triple+777+Center+Unit+G-14+Ground+Floor+Al+Wasl+Road+Jumeirah+3+Dubai"
                                     target="_blank" rel="noreferrer">
@@ -379,7 +340,6 @@
                                 </a>
                             </div>
                         </div>
-
                         <form class="enquiry visit-form reveal" id="contactForm">
                             <p class="eyebrow">RESERVE A TABLE</p>
                             <h3>Make it<br><em>memorable.</em></h3>
@@ -393,41 +353,15 @@
                             <button class="button button-light" type="submit">Send <span>↗</span></button>
                         </form>
                     </div>
-
                     <div class="visit-map reveal">
                         <iframe title="Bendereign location map"
                             src="https://www.google.com/maps?q=Triple+777+Center+Unit+G-14+Ground+Floor+Al+Wasl+Road+Jumeirah+3+Dubai&output=embed"
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- FOOTER 
-     Tagalog comment: Shared footer ito para sa MINDS at MENU; dito i-aadjust ang laman at social links. 
-    <footer class="site-footer">
-         Developer comment: Adjust footer height reduction and bottom flex anchoring mechanics here 
-        <nav>
-            <a class="footer-brand" href="#home" aria-label="Bendereign Home">
-                <img src="assets/bendereign-logo.png" class="footer-logo" alt="Bendereign">
-                <p>Bendereign</p>
-            </a>
-        </nav>
-         Developer comment: Adjust default white icon states, logo object-fit, and gold circle hover effects here 
-        <div class="social-icons" aria-label="Social media">
-            <a href="https://www.linkedin.com/company/bendereign/" target="_blank" rel="noreferrer"
-                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/bendereign/" target="_blank" rel="noreferrer" aria-label="Instagram"><i
-                    class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@bendereign" target="_blank" rel="noreferrer" aria-label="TikTok"><i
-                    class="fab fa-tiktok"></i></a>
-            <a href="https://www.facebook.com/p/Bendereign-61552033150007/" target="_blank" rel="noreferrer"
-                aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        </div>
-        <small>© <span id="year"></span> Bendereign™ · Reign for Eternity</small>
-    </footer> -->
 
     <div class="floating-actions-container">
         <button id="realmToggle" class="realm-float" type="button" aria-label="Open Bendereign Realm drawer">
@@ -436,7 +370,6 @@
         <a class="whatsapp-float ring-button" href="https://wa.me/97145724171" target="_blank" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
-
         <button id="backToTop" class="back-to-top" aria-label="Back to Top">
             <svg class="back-to-top-ring" viewBox="0 0 48 48" aria-hidden="true">
                 <circle cx="24" cy="24" r="20"></circle>
@@ -466,7 +399,7 @@
         </div>
     </section>
 
-    <!-- COOKIE BANNER -->
+    <!-- COOKIE BANNER 
     <div class="cookie-banner" id="cookieBanner">
         <p>We use cookies to remember your preferences and improve your Bendereign experience.</p>
         <div>
@@ -491,12 +424,11 @@
                 accounts. Your name, contact details and preferences are handled securely and are not sold.</p>
             <p>Cookie technologies help us remember preferences and understand site usage. You can disable non-essential
                 cookies in your browser at any time.</p>
-            <p>Requests about access, correction or deletion of your information can be sent to
-                <a href="mailto:social@bendereign.com">social@bendereign.com</a>. We follow applicable UAE data
-                protection and hospitality requirements.
-            </p>
+            <p>Requests about access, correction or deletion of your information can be sent to <a
+                    href="mailto:social@bendereign.com">social@bendereign.com</a>. We follow applicable UAE data
+                protection and hospitality requirements.</p>
         </section>
-    </div>
+    </div>-->
 
     <script src="app.js" defer></script>
 </body>
